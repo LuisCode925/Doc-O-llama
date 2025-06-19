@@ -7,11 +7,12 @@ export const APP_STATUS = {
     ERROR: -1
 }
 
-export const appStatus = writable(APP_STATUS.CHAT_MODE)
+export const appStatus = writable(APP_STATUS.INIT);
 export const appStatusInfo = writable({
-    uuid: 'f7854c9b-5835-4f10-94a4-e2860247b602', 
-    origName: 'How to Escape Special Characters in a String in JavaScript', 
-    numPages: 33
+    uuid: '452378f4-dbed-4d00-a091-a49fce527549', 
+    originalName: 'Shell-Linux-Programacion', 
+    totalPages: 1,
+    self: "http://localhost:8080/pdf/452378f4-dbed-4d00-a091-a49fce527549"
 })
 
 // Dependiendo del estado se mostrara un componente u otro
@@ -24,10 +25,8 @@ export const setAppStatusError = () => {
     appStatus.set(APP_STATUS.ERROR)
 };
 
-export const setAppStatusChatMode = (
-    {uuid, origName, numPages}:
-    {uuid: string, origName: string, numPages: number}) => {
+export const setAppStatusChatMode = ({uuid, originalName, totalPages, self}: {uuid: string, originalName: string, totalPages: number, self: string}) => {
     appStatus.set(APP_STATUS.CHAT_MODE)
     // Set Global info from PDF
-    appStatusInfo.set({uuid, origName, numPages})
+    appStatusInfo.set({uuid, originalName, totalPages, self})
 };

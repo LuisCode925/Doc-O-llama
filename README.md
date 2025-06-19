@@ -31,3 +31,5 @@ docker rm -fv hash
 
 ## Creación del modelo especifico    
 ollama create pdf-chat -f Modelfile
+
+1:40:01

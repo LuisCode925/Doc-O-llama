@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+import flowbitePlugin from "flowbite/plugin";
+
 export default {
+  important: true,
   content: [
     "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
     "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
   ],
-
-  plugins: [require("flowbite/plugin")],
-
-  darkMode: "class",
-
+  plugins: [flowbitePlugin],
+  darkMode: "selector",
   theme: {
     extend: {
       colors: {
