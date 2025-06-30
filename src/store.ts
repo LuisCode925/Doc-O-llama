@@ -9,10 +9,10 @@ export const APP_STATUS = {
 
 export const appStatus = writable(APP_STATUS.INIT);
 export const appStatusInfo = writable({
-    uuid: '452378f4-dbed-4d00-a091-a49fce527549', 
+    uuid: '122e6a1a-f7db-4e27-ac1b-a48208c4a950', 
     originalName: 'Shell-Linux-Programacion', 
     totalPages: 1,
-    self: "http://localhost:8080/pdf/452378f4-dbed-4d00-a091-a49fce527549"
+    self: "http://localhost:8080/pdf/122e6a1a-f7db-4e27-ac1b-a48208c4a950"
 })
 
 // Dependiendo del estado se mostrara un componente u otro

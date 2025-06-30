@@ -82,8 +82,6 @@
 
 <div class="flex flex-col">
 
-  <h2 class="text-2xl mb-10 font-bold">Paso 3: Hablando con el Doc O'llama.</h2>
-
   <div class="grid grid-cols-5 gap-7 mb-7">
     {#each images as image}
     <img
